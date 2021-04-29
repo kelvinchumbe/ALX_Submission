@@ -35,6 +35,7 @@ class BrighterMonday(scrapy.Spider):
 
         # Follow the url of the next page
         yield scrapy.Request(url=next_page, callback=self.parse)
-
-
-
+        
+# Run the script with the command below to scrap the brighter monday website and store jobs in a csv file:
+#    > scrapy crawl brighter_monday_spider -o brighter_monday_jobs.csv 
+    
